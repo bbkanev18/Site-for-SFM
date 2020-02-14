@@ -59,3 +59,46 @@ body {
     right: 35px;
     }
   }
+  /*under 425px*/
+  @media only screen and (max-width: 424px) {
+    a.active {
+      background: rgba(37, 37, 37, 0.7);
+      border-radius: 60px;
+      color: white;
+      margin-left: 22%;
+      margin-right: 22%;
+    }
+  }
+  
+  /*under 768px*/
+  @media only screen and (max-width: 767px) and (min-width: 425px) {
+    a.active {
+      background: rgba(37, 37, 37, 0.7);
+      border-radius: 60px;
+      color: white;
+      margin-left: 32%;
+      margin-right: 32%;
+    }
+  }
+  
+  /*under 1080px*/
+  @media only screen and (min-width: 768px) and (max-width: 1080px) {
+    a.active {
+      background: rgba(37, 37, 37, 0.7);
+      border-radius: 60px;
+      color: white;
+      margin-left: 40%;
+      margin-right: 40%;
+    }
+  }
+  
+  /* under 1440px */
+  @media only screen and (min-width: 1081px) and (max-width: 1440px) {
+    a.active {
+      background: rgba(37, 37, 37, 0.7);
+      border-radius: 60px;
+      color: white;
+      margin-left: 42%;
+      margin-right: 42%;
+    }
+  }
