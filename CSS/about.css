@@ -11,31 +11,6 @@ hr{
     background-color: white;
     border-radius: 40px;
 }
-/*image and text */
-.img
-{
-    width: 20%;
-    height: 20%;
-    margin-top: 2%;
-    margin-left: 2%;
-    position: absolute;
-	top: auto;
-	height: auto;
-}
-.description {
-	position: absolute;
-	top: auto;
-	float: left;
-	width: auto;
-	height: auto;
-    color: white;
-    left: 24%;
-	font-size: 15pt;
-}
-.fontsize
-{
-    font-size: 20pt;
-}
 
 /*add animation on about me text*/
 .animation span
@@ -86,3 +61,78 @@ hr{
     0% {transform: translateX(0)}
     100% {transform: translateX(200%)}
 }
+
+/*image and text */
+.img
+{
+    width: 20%;
+    height: 20%;
+    margin-top: 2%;
+    margin-left: 2%;
+    position: absolute;
+	top: auto;
+	height: auto;
+}
+.description {
+	position: absolute;
+	top: auto;
+	float: left;
+	width: auto;
+	height: auto;
+    color: white;
+    left: 24%;
+	font-size: 15pt;
+}
+.fontsize
+{
+    font-size: 16pt;
+}
+
+/*responsive design*/
+/*under 425px*/
+@media only screen and (max-width: 424px) {
+    .description {
+        left: 29%;
+        font-size: 11pt;
+    }
+    .fontsize
+    {
+        font-size: 12pt;
+    }
+  }
+  
+  /*under 768px*/
+@media only screen and (max-width: 767px) and (min-width: 425px) {
+    .description {
+        left: 28%;
+        font-size: 12pt;
+    }
+    .fontsize
+    {
+        font-size: 13pt;
+    }
+  }
+  
+  /*under 1080px*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .description {
+        left: 27%;
+        font-size: 13pt;
+    }
+    .fontsize
+    {
+        font-size: 14pt;
+    }
+  }
+  
+  /* under 1440px */
+@media only screen and (min-width: 1081px) and (max-width: 1440px) {
+    .description {
+        left: 25%;
+        font-size: 14pt;
+    }
+    .fontsize
+    {
+        font-size: 15pt;
+    }
+  }
