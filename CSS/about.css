@@ -11,6 +11,9 @@ hr{
     background-color: white;
     border-radius: 40px;
 }
+.link{
+    color: white;
+}
 
 /*add animation on about me text*/
 .animation span

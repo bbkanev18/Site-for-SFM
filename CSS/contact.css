@@ -12,26 +12,9 @@ h1
     color: white;
     text-align: center;
 }
-/*for links underline*/
-a:link {
+.link-for-email{
 	color: white;
-	text-decoration: none;
 }
-
-a:visited {
-	color: white;
-	text-decoration: none;
-}
-a:hover {
-	color: white;
-	text-decoration: underline;
-}
-
-a:active {
-	color: white;
-	text-decoration: underline;
-}
-
 
 /*contact form*/
 form {
@@ -76,6 +59,10 @@ form {
 	border-width: 0px;
 	cursor: pointer;
 }
+.width-for-contact{
+	width: 240px;
+}
+/*meadia for contact width*/
 @media only screen and (max-width: 568px) {
 	/*for when 6% margins would result in the form's width being less than 500px*/
 
@@ -93,5 +80,12 @@ form {
 		margin-left: calc(50% - 250px);
 	}
 }
+@media only screen and (max-width: 410px) {
+	
+	.width-for-contact{
+		width: 150px;
+	}
+}
+
 
 

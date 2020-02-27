@@ -12,7 +12,7 @@
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
-    <a href="C:/Users/user/Documents/GitHub/Site-for-SFM/index.html">Home</a>
+    <a href="index.html">Home</a>
     <a href="SFM-image.html">SFM</a>
     <a href="Contact.html"class="active">Contact</a>
     <a href="About.html">About</a>
@@ -31,7 +31,7 @@
 					<form id="contactForm">
 						<div class="formRow">
 							<p>Type:</p>
-							<select name="type" onchange="textareaPlaceholderUpdate();" style="width: 240px;">
+							<select name="type" onchange="textareaPlaceholderUpdate();" class="width-for-contact">
 								<option value="Question">Question</option>
 								<option value="Suggestion">Suggestion</option>
 								<option value="Feedback">General Feedback</option>
@@ -39,11 +39,11 @@
 						</div>
 						<div class="formRow">
 							<p>Name:</p>
-							<input type="text" name="name" placeholder="Please enter your name" style="width: 240px;">
+							<input type="text" name="name" placeholder="Please enter your name" class="width-for-contact">
 						</div>
 						<div class="formRow">
 							<p>Subject:</p>
-							<input type="text" name="subject" placeholder="Please enter a short subject" style="width: 240px;">
+							<input type="text" name="subject" placeholder="Please enter a short subject" class="width-for-contact">
 						</div>
 						<div class="formRow">
 							<textarea name="bodytext" placeholder="Please enter your question here"></textarea>
@@ -52,7 +52,7 @@
 						<input type="button" id="submitBtn" value="Submit" onclick="formsubmit();">
 					</form>
 					<p style="text-align: center; font-size: 16pt; color: white;">
-						Or contact us at: <a id="mailLink" href="mailto:boriskanev04@gmail.com" target="_blank">boriskanev04@gmail.com</a>
+						Or contact us at: <a class="link-for-email" id="mailLink" href="mailto:boriskanev04@gmail.com" target="_blank">boriskanev04@gmail.com</a>
 					</p>
 </article>
 
