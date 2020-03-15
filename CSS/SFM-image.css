@@ -1,0 +1,54 @@
+body{
+    background: linear-gradient(to left, #8942a2,#ba382f);
+}
+img{
+    width: 20%;
+    height: 5%;
+    margin: 1%;  
+      
+    border: white solid;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+hr{
+    max-width: 50%;
+    height: 10px;
+    background-color: white;
+    border-radius: 40px;
+}
+
+
+/*responsive design*/
+/*under 425px*/
+@media only screen and (max-width: 424px) {
+    img{
+        width: 45%;
+        height: 30%;
+    }
+  }
+  
+  /*under 768px*/
+@media only screen and (max-width: 767px) and (min-width: 425px) {
+    img{
+        width: 32%;
+        height: 17%;
+    }
+  }
+  
+  /*under 1080px*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    img{
+        width: 26%;
+        height: 11%;
+    }
+  }
+  
+  /* under 1440px */
+@media only screen and (min-width: 1081px) and (max-width: 1440px) {
+    img{
+        width: 22%;
+        height: 7%;
+    }
+  }
