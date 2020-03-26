@@ -1,0 +1,80 @@
+body{
+    background: linear-gradient(to left, #8942a2,#ba382f);
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+hr{
+    max-width: 50%;
+    height: 10px;
+    background-color: white;
+    border-radius: 40px;
+}
+li{
+    color: white;
+    margin-top: 50px;
+    font-size: 24pt;
+   
+}
+.link{
+    color: white;
+    
+}
+.container{
+    margin-top: 16%;
+}
+
+
+/*animation*/
+.animation span
+{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+.animation span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #8942a2,#ba382f);
+    animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+}
+
+.animation span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #8942a2,#ba382f);
+    animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+.animation span:nth-of-type(1)::before,
+.animation span:nth-of-type(1)::after{
+    animation-delay: 0.5s;
+}
+.animation span:nth-of-type(2)::before,
+.animation span:nth-of-type(2)::after{
+    animation-delay: 1s;
+}
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
+}
+
+
+  
