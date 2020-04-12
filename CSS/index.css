@@ -21,8 +21,12 @@ li{
     color: white;
     
 }
+/*container for text*/
 .container{
-    margin-top: 16%;
+    margin-top: 12%;
+}
+.container1{
+    margin-top: 11%;
 }
 
 
